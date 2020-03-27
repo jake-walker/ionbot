@@ -5,6 +5,7 @@ LABEL com.centurylinklabs.watchtower.enable="true"
 WORKDIR /app
 ADD . /app
 
+RUN apk add --no-cache g++
 RUN pip install --upgrade pip pipenv
 RUN pipenv install --system
 
