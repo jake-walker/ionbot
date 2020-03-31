@@ -5,6 +5,8 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
+flake8-eradicate = "*"
+flake8-docstrings = "*"
 
 [packages]
 discord-py = "*"

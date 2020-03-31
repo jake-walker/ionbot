@@ -1,3 +1,5 @@
+"""The bot."""
+
 from discord.ext import commands
 import os
 from logzero import logger
@@ -8,10 +10,12 @@ bot = commands.Bot(command_prefix="-")
 
 @bot.event
 async def on_ready():
+    """Function when the bot is ready."""
     logger.info("Logged in as {0.user}!".format(bot))
 
 
 def main():
+    """Function for starting the bot."""
     logger.info("Starting IonBot!")
 
     config.check_required()
